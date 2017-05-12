@@ -25,15 +25,15 @@ export default {
   name: 'bangList',
   data () {
       const xiamiBang=[
-          {topid:3,title:'欧美',img:'../../static/images/oumei.jpg'},
-          {topid:5,title:'内地',img:'../../static/images/neidi.jpg'},
-          {topid:6,title:'港台',img:'../../static/images/gangtai.jpg'},
-          {topid:16,title:'韩国',img:'../../static/images/hanguo.jpg'},
+          {topid:3,title:'欧美',img:'/static/images/oumei.jpg'},
+          {topid:5,title:'内地',img:'/static/images/neidi.jpg'},
+          {topid:6,title:'港台',img:'/static/images/gangtai.jpg'},
+          {topid:16,title:'韩国',img:'/static/images/hanguo.jpg'},
 
-          {topid:17,title:'日本',img:'../../static/images/riben.jpg'},
-          {topid:18,title:'民谣',img:'../../static/images/minyao.jpg'},
-          {topid:19,title:'摇滚',img:'../../static/images/yaogun.jpg'},
-          {topid:23,title:'销量榜',img:'../../static/images/xiaoliang.jpg'},
+          {topid:17,title:'日本',img:'/static/images/riben.jpg'},
+          {topid:18,title:'民谣',img:'/static/images/minyao.jpg'},
+          {topid:19,title:'摇滚',img:'/static/images/yaogun.jpg'},
+          {topid:23,title:'销量榜',img:'/static/images/xiaoliang.jpg'},
       ];
 
     return {
