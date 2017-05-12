@@ -1,0 +1,143 @@
+@import "mixin/mixin";
+//清除浮动
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+//全局
+*{
+  margin:0;padding: 0;
+}
+body{max-width: 640px;margin: 0 auto}
+a,input,img,button{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+ul,li{list-style: none;}
+.container{margin-top: 1.8rem;}
+//导航菜单
+.menu{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  margin-bottom: 0;
+  z-index: 10;
+   //当前项
+   .my-active {
+      color: $red;
+      .menu-text{
+        color: $red;
+      }
+    }
+  .sub-menu{
+    display: flex;
+    background-color: #eaeaea;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    .sub-menu-link{
+      width: 100%;
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      text-align: center;
+      .menu-text{
+        height: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 16px;
+      }
+    }
+  }
+}
+//播放器
+#play-bar{position: fixed;right: 0;bottom: 0;z-index: 10;background-color: rgba(0,0,0,.75);
+  padding: 5px;width: 100%;/*height: 60px;*/display: block;
+  color: #fff;box-sizing: border-box;
+}
+#play-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .play-img-box{
+    box-sizing: border-box;
+    flex: 1;
+    img{
+      display:block;
+      width: 100%;
+      border: solid 1px #9f9f9f;
+      padding: 1px;
+      box-sizing: border-box;
+    }
+  }
+  .center-box{
+    box-sizing: border-box;
+    flex: 3;
+    position: relative;
+    padding: 0 5px;
+    .sing-name{
+      width: 100%;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 3px;
+      margin-bottom: 5px;
+      font-size: 0.5rem
+    }
+    .sing-singer{
+      margin-top: 5px;
+      color: #ccc;
+      margin-bottom: 5px;
+      font-size: 0.3rem
+    }
+    #small-progress{
+      position: absolute;
+      left: 5px;
+      bottom: -5px;
+      height: 0.1rem;
+      background-color: deeppink;
+    }
+  }
+  .play-control{
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+      .play-bar-icon{
+        /*@include font-dpr(20px);*/
+        line-height: 50px;
+        font-size: 0.7rem;
+      }
+      .icon-play,.icon-pause{margin-right: 0.35rem;}
+  }
+}
+//切换动画
+/*切换动画*/
+.slide-left-enter-active,.slide-left-leave-active{
+  transition: transform .08s ease-in-out,opacity .1s ease-in;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+.slide-left-enter, .slide-left-leave-active{
+  transform: translate3d(-10%, 0, 0);
+  -webkit-transform: translate3d(-10%, 0, 0);
+  -moz-transform: translate3d(-10%, 0, 0);
+  opacity: 0;
+}
+
+
+
+
