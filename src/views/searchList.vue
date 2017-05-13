@@ -137,8 +137,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     @import '../assets/scss/mixin/mixin.scss';  /*引入scss混合宏*/
-  .search-box{padding: 0 0.3rem;position: relative;}
-  .search-head{position: relative;margin-bottom: 0.5rem}
-  .search-input{width: 85%;height: 1rem;padding: 0 0.1rem;border: 1px solid $gray}
-  .search-btn{position: absolute;right:0;font-size: 0.8rem;margin-top: 0.1rem;color:  lighten($black,50%)}
+  .search-box{position: relative;}
+  .search-head{position: relative;margin-bottom: 0.5rem;display: flex;width: 100%;padding: 0 0.2rem}
+  .search-input{height: 1rem;padding: 0 0.1rem;border: 1px solid $gray;flex: 6;display: flex;}
+  .search-btn{font-size: 0.8rem;margin-top: 0.1rem;color:  lighten($black,50%);flex: 1;display: flex;justify-content: center;align-items: center;}
 </style>
