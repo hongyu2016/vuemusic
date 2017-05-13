@@ -1,8 +1,10 @@
 <template>
   <!--顶部菜单-->
   <nav class="menu">
+    <div id="tip">
+      <p>说明：本网站非商业盈利网站，所有歌曲数据来自 <a href="https://www.showapi.com/">showAPI</a></p>
+    </div>
     <div class="sub-menu animated slideInDown">
-
       <router-link :to="{name:'index'}" tag="div" class="menu-list sub-menu-link">
         <button type="button" class="menu-text">推荐</button>
       </router-link>
@@ -71,4 +73,7 @@ export default {
   }
   .menu-text{display: block;width: 100%;background-color: #fff;border: 1px solid #e6e5e5;border-top-color: transparent;border-left-color: transparent}
 
+  #tip{padding: 0.2rem;background-color: #fff;border-bottom: solid 1px $gray;}
+  #tip>p{font-size: 10px;white-space: nowrap;}
+  #tip>p>a{color: red}
 </style>

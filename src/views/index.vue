@@ -84,9 +84,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
     @import '../assets/scss/mixin/mixin.scss';/*引入scss混合宏*/
-  .gridlist-container{
-      margin-top: 1.8rem;
-  }
     .gridlist{
         display: flex;
         flex-wrap: wrap;

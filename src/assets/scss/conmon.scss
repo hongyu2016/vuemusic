@@ -14,13 +14,16 @@
 *{
   margin:0;padding: 0;
 }
+html{
+  -webkit-text-size-adjust: none;
+}
 body{max-width: 640px;margin: 0 auto}
 a,input,img,button{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
 }
 ul,li{list-style: none;}
-.container{margin-top: 1.8rem;}
+.container{margin-top: 2.6rem;}
 
 
 
