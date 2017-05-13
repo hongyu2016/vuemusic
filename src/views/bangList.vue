@@ -15,25 +15,43 @@
 
         </router-link>
       </ul>
-
   </div>
 </template>
 
 <script>
-
+    import oumei from '../assets/images/oumei.jpg'
+    import liuxing from '../assets/images/neidi.jpg'
+    import neidi from '../assets/images/neidi.jpg'
+    import gangtai from '../assets/images/gangtai.jpg'
+    import hanguo from '../assets/images/hanguo.jpg'
+    import riben from '../assets/images/riben.jpg'
+    import minyao from '../assets/images/minyao.jpg'
+    import yaogun from '../assets/images/yaogun.jpg'
+    import rege from '../assets/images/yaogun.jpg'
+    import xinge from '../assets/images/yaogun.jpg'
+    import wangluo from '../assets/images/yaogun.jpg'
+    import yinyueren from '../assets/images/yaogun.jpg'
+    import kge from '../assets/images/xiaoliang.jpg'
+    import xiaoliang from '../assets/images/xiaoliang.jpg'
 export default {
   name: 'bangList',
   data () {
       const xiamiBang=[
-          {topid:3,title:'欧美',img:'/static/images/oumei.jpg'},
-          {topid:5,title:'内地',img:'/static/images/neidi.jpg'},
-          {topid:6,title:'港台',img:'/static/images/gangtai.jpg'},
-          {topid:16,title:'韩国',img:'/static/images/hanguo.jpg'},
+          {topid:3,title:'欧美',img:oumei},
+          {topid:4,title:'流行榜',img:liuxing},
+          {topid:5,title:'内地',img:neidi},
+          {topid:6,title:'港台',img:gangtai},
+          {topid:16,title:'韩国',img:hanguo},
 
-          {topid:17,title:'日本',img:'/static/images/riben.jpg'},
-          {topid:18,title:'民谣',img:'/static/images/minyao.jpg'},
-          {topid:19,title:'摇滚',img:'/static/images/yaogun.jpg'},
-          {topid:23,title:'销量榜',img:'/static/images/xiaoliang.jpg'},
+          {topid:17,title:'日本',img:riben},
+          {topid:18,title:'民谣',img:minyao},
+          {topid:19,title:'摇滚',img:yaogun},
+          {topid:26,title:'热歌',img:rege},
+          {topid:27,title:'新歌',img:xinge},
+          {topid:28,title:'网络歌曲',img:wangluo},
+          {topid:32,title:'音乐人',img:yinyueren},
+          {topid:28,title:'K歌金曲',img:kge},
+          {topid:23,title:'销量榜',img:xiaoliang},
       ];
 
     return {

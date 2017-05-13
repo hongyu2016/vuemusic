@@ -22,7 +22,7 @@
     </div>
 </template>
 <script>
-    import tools from '../../static/js/playTools'
+    import tools from '../assets/js/playTools'
     import {mapGetters} from 'vuex'
     export default{
         name:'gotoTop',

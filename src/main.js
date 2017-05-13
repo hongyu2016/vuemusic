@@ -9,8 +9,10 @@ import VueAxios from 'vue-axios'
 import VueLazyLoad from 'vue-lazyload'
 import libFlexible from 'lib-flexible'
 import infiniteScroll from 'vue-infinite-scroll'
-import '../static/awesome/css/font-awesome.min.css'
 import './assets/scss/conmon.scss'
+//要在js里面使用 必须 导入 否则 webpack不会编译
+import errorImg from './assets/images/error.png'
+import loadingImg from './assets/images/loading.gif'
 
 Vue.config.productionTip = false;
 Vue.prototype.$http=axios;
@@ -18,8 +20,8 @@ Vue.use(VueAxios,axios);
 Vue.use(libFlexible);
 Vue.use(VueLazyLoad,{
   preload:2,
-    error:'@/static/images/error.png',
-    loading: '@/static/images/loading.gif',
+    error:errorImg,
+    loading: loadingImg,
     attempt:2
 });
 Vue.use(infiniteScroll);

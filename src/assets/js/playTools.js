@@ -1,4 +1,4 @@
-import store from '../../src/store/index.js'
+import store from '../../../src/store/index.js'
 
 export default {
     playMusic:function(index){

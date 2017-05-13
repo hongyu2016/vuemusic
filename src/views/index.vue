@@ -20,7 +20,7 @@
 <script>
     import api from '../api/index'
     import loading from '../components/loading.vue'
-    import tools from '../../static/js/playTools'
+    import tools from '../assets/js/playTools'
     import {mapActions} from 'vuex'
 export default {
   name: 'index',
