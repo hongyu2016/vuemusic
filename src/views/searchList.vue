@@ -141,4 +141,37 @@ export default {
   .search-head{position: relative;margin-bottom: 0.5rem;display: flex;width: 100%;padding: 0 0.2rem}
   .search-input{height: 1rem;padding: 0 0.1rem;border: 1px solid $gray;flex: 6;display: flex;}
   .search-btn{font-size: 0.8rem;margin-top: 0.1rem;color:  lighten($black,50%);flex: 1;display: flex;justify-content: center;align-items: center;}
+
+    .list{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.1rem 0.2rem;
+        font-size: 14px;
+        border-bottom: 1px solid $gray;
+    }
+    .list:last-child{
+        border-bottom-color: transparent;
+    }
+
+    .flex-item-img{
+        flex: 1;
+    img{
+        width: 100%;
+        border: 1px solid #eaeaea;
+        box-sizing: border-box;
+    }
+    }
+    .flex-item-title{
+        flex: 3;
+        padding: 0 0.4rem;
+    }
+    .flex-item-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0.5;
+        font-size: 18px;
+    }
 </style>

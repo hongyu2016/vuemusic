@@ -14,6 +14,7 @@ Vue.use(Router);
 export default new Router({
     base:__dirname,
     linkActiveClass:'my-active',
+    //mode: 'history',
     routes: [
         {
           path: '/index',
