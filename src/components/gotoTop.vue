@@ -1,6 +1,6 @@
 <template>
     <!--返回顶部-->
-    <div id="goto-top" @click='goTop'>
+    <div id="goto-top" @click='goTop(6)'>
         up
     </div>
 </template>
@@ -8,9 +8,23 @@
     export default{
         name:'gotoTop',
         methods:{
-            goTop(){
-                document.body.scrollTop=0;
-                document.documentElement.scrollTop=0;
+            goTop(rate){
+                /*document.body.scrollTop=0;
+                document.documentElement.scrollTop=0;*/
+                let doc = document.body.scrollTop? document.body : document.documentElement;
+                let scrollTop = doc.scrollTop;
+                let top = function () {
+                    scrollTop = scrollTop + (0 - scrollTop) / (rate || 2);
+                    // 临界判断，终止动画
+                    if (scrollTop < 1) {
+                        doc.scrollTop = 0;
+                        return;
+                    }
+                    doc.scrollTop = scrollTop;
+                    // 动画执行!
+                    requestAnimationFrame(top);
+                };
+                top();
             }
         }
     }
